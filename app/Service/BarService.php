@@ -23,4 +23,9 @@ class BarService
     public function __construct(public StdoutLoggerInterface $logger)
     {
     }
+
+    public function bar()
+    {
+        return uniqid();
+    }
 }
