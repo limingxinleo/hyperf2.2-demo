@@ -20,8 +20,11 @@ class BarService
     #[Inject]
     public ContainerInterface $container;
 
+    public $id = '';
+
     public function __construct(public StdoutLoggerInterface $logger)
     {
+        $this->id = uniqid();
     }
 
     public function bar()
